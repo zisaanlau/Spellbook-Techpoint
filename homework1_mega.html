@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hw1 mega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="homework1_mega.css" />
+    
+</head>
+<body>
+    <h1 id = "heading">
+        homework1 mega
+    </h1>
+    
+    <form id = "form">
+        input:<br>
+        <input id = "input" type = "text" name = "input"><br>
+        <br/>
+    </form>
+
+    <button onclick="myFunction()">Change Text</button>
+
+    <script>
+
+        function myFunction(){
+            const newheading = document.getElementById("input").value
+            const heading = document.getElementById("heading")
+            heading.textContent = newheading
+        }
+
+    </script> 
+</body>
+</html>
